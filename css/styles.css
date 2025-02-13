@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: #212121;
+  color: #F97DC4;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.loading {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading svg {
+  height: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+svg path.linear-1 {
+  stroke: white;
+  filter: url(#blur-filter);
+}
+
+.loading .linear-1 {
+  stroke-dasharray: 281;
+  -webkit-animation: dash 6s infinite linear forwards;
+}
+
+.loading .linear-2 {
+  stroke-dasharray: 300;
+  -webkit-animation: dash 5s infinite linear forwards;
+}
+
+.loading .linear-3 {
+  stroke-dasharray: 340;
+  -webkit-animation: dash 4s infinite linear forwards;
+}
+
+.loading .linear-4 {
+  stroke-dasharray: 400;
+  -webkit-animation: dash 3s infinite linear forwards;
+}
+
+/* Animation */
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 814;
+  }
+  to {
+    stroke-dashoffset: -814;
+  }
+}
+
+h1 {
+  text-shadow: 2px 2px 5px #E21393;
+}
+
+h3 {
+  color: #fff;
+}
+
+a,
+h3 {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E21393;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Button styling */
+#button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #E21393;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+#button a:hover {
+  background: #F97DC4;
+  color: #212121;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  
+  font-size: 14px;
+  color: #F97DC4;
+  position: relative;
+  z-index: 10;
+}
+
+footer a {
+  color: #E21393;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#play-music-button {
+  background-color: #E21393; /* Vibrant pink */
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+#play-music-button:hover {
+  background-color: #F97DC4; /* Lighter pink on hover */
+  transform: scale(1.1); /* Slightly enlarge the button */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}
+
+#play-music-button:active {
+  transform: scale(0.95); /* Button shrinks slightly when clicked */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduce shadow */
+}
+
+  .pink-outline {
+    color: white; /* Optional: Base text color */
+    text-shadow: 
+      2px 2px 0 #E21393, /* Pink shadow to the right and bottom */
+      -2px -2px 0 #E21393, /* Pink shadow to the left and top */
+      2px -2px 0 #E21393, /* Pink shadow to the top-right */
+      -2px 2px 0 #E21393; /* Pink shadow to the bottom-left */
+    font-weight: bold; /* Optional: Makes the outline more pronounced */
+  }
+  
